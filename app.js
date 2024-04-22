@@ -9,5 +9,5 @@ app.use(express.json())
 app.use(allRoutes)
 
 app.listen(PORT, () => {
-  console.log("running...");
+  console.log("server running on port " + PORT);
 });

@@ -9,6 +9,14 @@ module.exports = {
     dialect: "mysql",
     port: 3306,
   },
+  development: {
+    username: "root",
+    password: "AHGhgd13831",
+    database: "my_app",
+    host: "node44675-auzan.user.cloudjkt01.com",
+    dialect: "mysql",
+    port: 3306,
+  },
   test: {
     username: "root",
     password: null,

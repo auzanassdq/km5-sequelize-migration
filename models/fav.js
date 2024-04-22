@@ -9,14 +9,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      // models.User.belongsToMany(models.Movie, {
-      //   through: this,
-      //   foreignKey: "user_id"
-      // });
-      // models.Movie.belongsToMany(models.User, {
-      //   through: this,
-      //   foreignKey: "movie_id"
-      // });
+      models.User.belongsToMany(models.Movie, {
+        through: this,
+        foreignKey: "user_id"
+      });
+      models.Movie.belongsToMany(models.User, {
+        through: this,
+        foreignKey: "movie_id"
+      });
     }
   }
   Fav.init(
